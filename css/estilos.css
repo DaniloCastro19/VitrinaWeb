@@ -148,3 +148,12 @@ header .textos-header{
 .imagen-port:hover .hover-galeria{
     transform: scale(0.2);
 }
+
+footer {
+    background-color: #8360c3;
+    text-align: center;
+    font-family: 'Open sans', Courier, monospace;
+    
+}
+
+
