@@ -183,6 +183,7 @@ header .textos-header{
 
 /* Our team */
 .about-services{
+
     background: #f2f2f2;
     padding-bottom: 30px;
     
@@ -192,12 +193,18 @@ header .textos-header{
     justify-items: auto;
 }
 .servicio-cont{
-    display: flex;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 10px 10px 10px 10px;
+}
+.servicio-cont > *{
+    /* border: solid #414141 1px; */
     justify-content: space-between;
     align-items: center;
 }
 .servicio-ind{
-    width: 28%;
+    padding: 1em;
+    /* width: 28%; */
     text-align: center;
 }
 .servicio-ind img{

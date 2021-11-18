@@ -55,7 +55,9 @@ body{
     
 }
 
-.registro .boton {
+
+
+.registro .boton{
     width: 100%;
     background: #1f53c5;
     border: none;
@@ -64,3 +66,15 @@ body{
     margin: 16px 0;
     font-size: 16px;
 }
+
+.registro .boton:hover{
+    width: 100%;
+    background: #677eb1;
+    border: none;
+    padding: 12px;
+    color: aliceblue;
+    margin: 16px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
