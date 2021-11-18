@@ -185,6 +185,11 @@ header .textos-header{
 .about-services{
     background: #f2f2f2;
     padding-bottom: 30px;
+    
+}
+
+.contenedor{
+    justify-items: auto;
 }
 .servicio-cont{
     display: flex;
