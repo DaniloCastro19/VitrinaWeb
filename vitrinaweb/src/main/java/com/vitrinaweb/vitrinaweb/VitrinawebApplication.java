@@ -1,13 +1,13 @@
-package com.example.VitrinaWeb;
+package com.vitrinaweb.vitrinaweb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class VitrinaWebApplication {
+public class VitrinawebApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(VitrinaWebApplication.class, args);
+		SpringApplication.run(VitrinawebApplication.class, args);
 	}
 
 }

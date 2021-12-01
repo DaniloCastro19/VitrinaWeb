@@ -1,10 +1,10 @@
-package com.example.VitrinaWeb;
+package com.vitrinaweb.vitrinaweb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class VitrinaWebApplicationTests {
+class VitrinawebApplicationTests {
 
 	@Test
 	void contextLoads() {
