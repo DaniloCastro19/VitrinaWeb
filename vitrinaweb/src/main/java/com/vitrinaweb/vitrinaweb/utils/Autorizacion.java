@@ -29,7 +29,7 @@ public class Autorizacion implements Filter{
             }
             try {
                 Jws<Claims> claims=Jwts.parser().setSigningKey(KEY).parseClaimsJws(hash);
-                if((url.contains("/api/equipos")||url.contains("/api/partidos"))&&(!claims.getBody().get("username").equals(""))){
+                if((url.contains("/api/productos")||url.contains("/api/compras"))&&(!claims.getBody().get("username").equals(""))){
                     chain.doFilter(request, response);    
                 }
 

@@ -16,8 +16,8 @@ public class CompraService {
     CompraRepository compraRepository;
 
 
-    public void guardarCompra(CompraModel Compra){
-        this.compraRepository.save(Compra);
+    public void guardarCompra(CompraModel compra){
+        this.compraRepository.save(compra);
      }
  
  
