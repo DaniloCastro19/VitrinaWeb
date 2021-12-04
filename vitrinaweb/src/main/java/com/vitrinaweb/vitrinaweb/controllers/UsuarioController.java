@@ -12,6 +12,7 @@ import com.vitrinaweb.vitrinaweb.utils.BCrypt;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 // import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -26,6 +27,8 @@ import io.jsonwebtoken.SignatureAlgorithm;
 
 @RestController
 @RequestMapping("/api")
+// @Component
+@CrossOrigin(origins = "*")
 public class UsuarioController {
     
     @Autowired
@@ -107,16 +110,7 @@ public class UsuarioController {
         return ResponseEntity.ok(respuesta);
         }
 
-    // @DeleteMapping(path = "/{id}")
-    // public ResponseEntity eliminar(@PathVariable("id") String id){
 
-    //    this.usuarioService.eliminar(id);
-    //         Map<String, String> respuesta = new HashMap<>();
-    //         respuesta.put("mensaje","Se eliminó correctamente");
-    //         return ResponseEntity.ok(respuesta);
-         
-    
-    // }
 }
 
 
