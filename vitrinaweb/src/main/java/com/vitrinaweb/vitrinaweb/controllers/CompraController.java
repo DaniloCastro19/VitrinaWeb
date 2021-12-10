@@ -31,6 +31,7 @@ public class CompraController {
 
         Map<String, String> respuesta = new HashMap<>();
         respuesta.put("mensaje","Se agregó correctamente");
+        respuesta.put("estado", "true");
 
         return ResponseEntity.ok(respuesta);
 

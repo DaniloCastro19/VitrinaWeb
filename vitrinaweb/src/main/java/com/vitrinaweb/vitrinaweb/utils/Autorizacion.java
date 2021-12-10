@@ -17,6 +17,11 @@ public class Autorizacion implements Filter{
             throws IOException, ServletException {
                 
         HttpServletRequest httpServletRequest=(HttpServletRequest) request;
+        httpServletRequest.setAttribute("Access-Control-Allow-Origin","*");
+        httpServletRequest.setAttribute("Access-Control-Allow-Origin","Authorization, Content-Type");
+
+        
+        
         String url =httpServletRequest.getRequestURI();
         if(url.contains("/api/usuarios")||url.contains("/api/usuarios/login")||url.contains("index")){
             chain.doFilter(request, response); 

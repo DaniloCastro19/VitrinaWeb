@@ -13,7 +13,6 @@ public class ProductoService {
     @Autowired 
     ProductoRepository productoRepository; 
 
- 
     public void guardarProductos(ProductoModel producto) {
         this.productoRepository.save(producto);
     }
