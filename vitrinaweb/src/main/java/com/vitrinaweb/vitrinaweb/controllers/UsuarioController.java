@@ -34,6 +34,15 @@ public class UsuarioController {
     @Autowired
     UsuarioService usuarioService;
 
+    @GetMapping("/verificar")
+    public ResponseEntity<Map<String,Boolean>> verificarToken(){
+        Map<String,Boolean> respuesta= new HashMap<>();
+        respuesta.put("ok", true);
+        return ResponseEntity.ok(respuesta);
+
+    }
+
+
     @PostMapping("/usuarios")
     public ResponseEntity<Map<String, String>> guardarUsuarios(@RequestBody UsuarioModel usuario){
         
@@ -80,6 +89,10 @@ public class UsuarioController {
                 usuarioAux.setHash(hash);
                 respuesta.put("mensaje","Accedió correctamente");
                 respuesta.put("token",hash);
+                respuesta.put("id",usuarioAux.getId());
+                respuesta.put("nombre",usuarioAux.getNombre());
+                respuesta.put("correo",usuarioAux.getCorreo());
+                respuesta.put("username",usuarioAux.getUsername());
             }
         }
         return ResponseEntity.ok(respuesta);
